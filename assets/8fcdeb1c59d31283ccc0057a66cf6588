@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "plugins": [
+      [
+        "@config-plugins/react-native-ble-plx",
+        {
+          "isBackgroundEnabled": true,
+          "modes": [
+            "peripheral",
+            "central"
+          ],
+          "bluetoothAlwaysPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices",
+          "bluetoothPeripheralPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices"
+        }
+      ]
+    ],
+    "name": "MClockEAS",
+    "slug": "MClockEAS",
+    "version": "5.1.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d8d79"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "googleServicesFile": "./Firebase/google-services.json",
+      "package": "com.soheil127.MClockEAS"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
