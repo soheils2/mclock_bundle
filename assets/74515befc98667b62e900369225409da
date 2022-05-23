@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "plugins": [
+      [
+        "@config-plugins/react-native-ble-plx",
+        {
+          "isBackgroundEnabled": true,
+          "modes": [
+            "peripheral",
+            "central"
+          ],
+          "bluetoothAlwaysPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices",
+          "bluetoothPeripheralPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices"
+        }
+      ]
+    ],
+    "name": "MClockEAS",
+    "slug": "MClockEAS",
+    "version": "5.1.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d8d79"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier":"com.soheil127.MClockEAS",
+      "config":{"googleMapsApiKey":"AIzaSyBIy44iSGVvhF0Mm6tcHI_sZELf19yNSuk"}
+    
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "googleServicesFile": "./Firebase/google-services.json",
+      "package": "com.soheil127.MClockEAS",
+      "config":{"googleMaps":{"apiKey":"AIzaSyDaEY5sj3g-OupggFKrGDEmpVMy4eX5wFQ"}},
+      "permissions":["ACCESS_COARSE_LOCATION",
+                      "ACCESS_FINE_LOCATION",
+                      "USE_FINGERPRINT",
+                      "USE_BIOMETRIC",
+                      "VIBRATE",
+                      "com.majeur.launcher.permission.UPDATE_BADGE"
+        ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
