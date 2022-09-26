@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "plugins": [
+      [
+        "@config-plugins/react-native-ble-plx",
+        {
+          "isBackgroundEnabled": true,
+          "modes": [
+            "peripheral",
+            "central"
+          ],
+          "bluetoothAlwaysPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices",
+          "bluetoothPeripheralPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you set your profile picture."
+        }
+      ]
+    ],
+    "name": "MClockEAS",
+    "slug": "MClockEAS",
+    "version": "5.2.7",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d8d79"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier":"com.soheil127.MClockEAS",
+      "config":{"googleMapsApiKey":"AIzaSyBIy44iSGVvhF0Mm6tcHI_sZELf19yNSuk"}
+    
+    },
+    "android": {
+      "package": "com.soheil127.MClockEAS",
+      "versionCode": 1,
+      "useNextNotificationsApi": true,
+      "googleServicesFile": "./Firebase/google-services.json",
+      "config":{"googleMaps":{"apiKey":"AIzaSyDaEY5sj3g-OupggFKrGDEmpVMy4eX5wFQ"}},
+      "permissions":["ACCESS_COARSE_LOCATION",
+                      "ACCESS_FINE_LOCATION",
+                      "USE_FINGERPRINT",
+                      "USE_BIOMETRIC",
+                      "VIBRATE",
+                      "com.majeur.launcher.permission.UPDATE_BADGE",
+                      "CAMERA",
+                      "READ_EXTERNAL_STORAGE",
+                      "WRITE_EXTERNAL_STORAGE"
+        ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
